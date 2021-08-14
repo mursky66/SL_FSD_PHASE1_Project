@@ -1,0 +1,14 @@
+package com.lockedme;
+
+import java.util.List;
+import java.util.Scanner;
+
+public class LockedMeProject
+{
+	static final String folderpath="G:\\Lerning\\SL Mattirial\\Course-2\\Project work self\\LockedMeFiles";
+	public static void main(String[] args) 
+	{
+		Scanner obj = new Scanner(System.in);
+	}
+
+}

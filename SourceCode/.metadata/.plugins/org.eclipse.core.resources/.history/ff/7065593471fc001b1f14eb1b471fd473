@@ -1,0 +1,17 @@
+package com.lockedme;
+
+import java.util.List;
+
+public class LockedMeProject
+{
+	static final String folderpath="G:\\Lerning\\SL Mattirial\\Course-2\\Project work self\\LockedMeFiles";
+	public static void main(String[] args) 
+	{
+		List<String> fileName = FileManager.getAllFiles(folderpath);
+		
+		for(String f:fileName)
+			System.out.println(f);
+
+	}
+
+}
