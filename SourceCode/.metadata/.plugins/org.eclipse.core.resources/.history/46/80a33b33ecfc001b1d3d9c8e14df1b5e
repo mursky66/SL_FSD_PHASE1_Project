@@ -1,0 +1,29 @@
+package com.lockedme;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class LockedMeProject
+{
+	static final String folderpath="G:\\Lerning\\SL Mattirial\\Course-2\\Project work self\\LockedMeFiles";
+	public static void main(String[] args) 
+	{
+		//Code for serching file
+				String fileName;
+				Scanner obj = new Scanner(System.in);
+				
+				//Read file name from user 
+				System.out.println("Enter file name to be searched:");
+				fileName=obj.nextLine();
+				
+				//Search the file 
+				boolean isFound = FileManager.searchFile(folderpath, fileName);
+				
+				if(isFound)
+					System.out.println("File deleted successfully");
+				else
+					System.out.println("Either file not there or some access issue");
+	}
+
+}
