@@ -17,7 +17,6 @@ public class LockedMeProject
 		System.out.println("Enter file name to be deleted:");
 		fileName=obj.nextLine();
 		
-		//Delete the file 
 		boolean isDeleted = FileManager.deleteFile(folderpath, fileName);
 		
 		if(isDeleted)

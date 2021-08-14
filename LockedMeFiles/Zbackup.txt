@@ -44,3 +44,23 @@ for(String f:fileName)
 		obj.close();
 
 ====================================================================================================
+
+Delete file
+-------------
+//Code for deleting file
+		String fileName;
+		Scanner obj = new Scanner(System.in);
+		
+		//Read file name from user 
+		System.out.println("Enter file name to be deleted:");
+		fileName=obj.nextLine();
+		
+		//Delete the file 
+		boolean isDeleted = FileManager.deleteFile(folderpath, fileName);
+		
+		if(isDeleted)
+			System.out.println("File deleted successfully");
+		else
+			System.out.println("Either file not there or some access issue");
+
+====================================================================================================

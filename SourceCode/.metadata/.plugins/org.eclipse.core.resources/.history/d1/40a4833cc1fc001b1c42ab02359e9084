@@ -56,23 +56,14 @@ public class FileManager
 		}
 	}
 	
-	
-	/**
-	 * This method will delete file name if it exists.
-	 * @param folderpath
-	 * @param fileName
-	 * @return
-	 */
 	public static boolean deleteFile(String folderpath, String fileName)
 	{
 		File file = new File(folderpath+"\\"+fileName);
 		
 		try
 		{
-			if(file.delete())
+			if(file.delete());
 			return true;
-			else
-				return false;
 		}
 		catch(Exception Ex)
 		{
